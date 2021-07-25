@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/TableExport-master/dist/css/tableexport.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d20d6c8c4.js" crossorigin="anonymous"></script>
+    <title>Ejercicio Grupal 4 | LISTADO VISITAS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="img/Safety Logo H.png" alt="logotipo safety check"></a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="crear_capacitacion.html">Capacitación</a></li>
+                <li><a href="listar_capacitaciones.html">Listar Capacitaciones</a></li>
+                <li><a href="listado_usuarios.html">Usuarios</a></li>
+                <li><a href="listado_visitas.html" class="activo">Visitas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <section id="banner_listado_visitas">
+        <h1>Listado de visitas</h1>
+        <h2>Tabla con lista de todas las visitas realizadas a cada uno de los clientes
+        </h2>
+    </section>
+    <main id="main_listar_capacitaciones">
+        <!-- Tabla de valores -->
+        <h2>LISTADO DE VISITAS</h2>
+        <table id="tabla-de-datos">
+            <thead>
+                <tr class="title_table">
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>RUT</th>
+                    <th>Cliente</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>12/04/2021</td>
+                    <td>12:45 hrs.</td>
+                    <td>771111111</td>
+                    <td>Entel</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>20/05/2021</td>
+                    <td>11:00 hrs.</td>
+                    <td>772222222</td>
+                    <td>Gasco</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>23/05/2021</td>
+                    <td>16:20 hrs.</td>
+                    <td>773333333</td>
+                    <td>Preunic</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>02/06/2021</td>
+                    <td>14:30 hrs.</td>
+                    <td>774444444</td>
+                    <td>Falabella</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>08/06/2021</td>
+                    <td>17:30 hrs.</td>
+                    <td>775555555</td>
+                    <td>Soprole</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>09/06/2021</td>
+                    <td>12:30 hrs.</td>
+                    <td>776666666</td>
+                    <td>Mall Plaza</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>21/06/2021</td>
+                    <td>09:00 hrs.</td>
+                    <td>777777777</td>
+                    <td>Fonasa</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>27/06/2021</td>
+                    <td>15:00 hrs.</td>
+                    <td>778888888</td>
+                    <td>Banmédica</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>03/07/2021</td>
+                    <td>10:40 hrs.</td>
+                    <td>779999999</td>
+                    <td>Casa Royal</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>15/07/2021</td>
+                    <td>16:45 hrs.</td>
+                    <td>781111111</td>
+                    <td>Ripley</td>
+                    <td class="check"><i class="far fa-calendar-check" onclick="confirmar()"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Sección Procesos -->
+        <section id="procesos">
+            <div>
+                <h2>¿Qué procesos considera la plataforma actualmente?</h2>
+            </div>
+            <article class="proceso">
+                <i class="far fa-address-card"></i>
+                <h3>Registro de usuarios</h3>
+                <p>Permite ingreso de usuarios: Cliente, profesional y administrativo</p>
+            </article>
+            <article class="proceso">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Registro de ocurrencias</h3>
+                <p>Manejo de data respectiva a accidentes realacionados al cliente</p>
+            </article>
+            <article class="proceso">
+                <i class="far fa-calendar-check"></i>
+                <h3>Registro de servicios</h3>
+                <p>Manejo de visitas, capacitaciones y asesorías con sus respectivas mejoras</p>
+            </article>
+            <article class="proceso">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Registro de pagos</h3>
+                <p>Detalle de pagos realizado por el cliente</p>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <a href="index.html"><img src="img/Safety Logo H WHITE.png" alt="logotipo safety white"></a>
+    </footer>
+    <!-- JavaScript, jQuery -->
+    <script src="lib/jQuery/jquery-3.6.0.js"></script>
+    <script src="lib/xlsx/xlsx.core.min.js"></script>
+    <script src="lib/FileSaver/FileSaver.js"></script>
+    <script src="lib/TableExport-master/dist/js/tableexport.js"></script>
+    <script src="js/listado_visitas.js"></script>
+</body>
+
+</html>

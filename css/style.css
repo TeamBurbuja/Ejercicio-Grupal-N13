@@ -1,0 +1,961 @@
+/********** ESTILOS GENERALES **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/********** ESTILOS HOME **********/
+
+header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 20px;
+    height: 50px;
+}
+
+header .fas {
+    font-size: 24px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu ul li {
+    padding: 5px;
+}
+
+header nav ul a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #377ca5;
+}
+
+header nav ul a:hover {
+    color: #ff545d;
+    border-bottom: 3px solid #ff545d;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 5px;
+    box-sizing: unset;
+}
+
+header label .fas {
+    font-size: 30px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#btn-menu {
+    display: none;
+}
+
+.activo {
+    color: #ff545d;
+    border-bottom: 3px solid #ff545d;
+}
+
+#banner_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_home.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_home h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_home h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#banner_home button {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#banner_home button:hover {
+    background: #377ca5;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 300px;
+    margin: 60px 0;
+    padding: 40px;
+    color: #3a3a3a;
+    text-align: justify;
+}
+
+.fa-sitemap,
+.fa-users {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #377ca5;
+}
+
+.article h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#procesos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 70px 40px 0;
+    background-image: url("../img/servicios_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#procesos div {
+    width: 100%;
+}
+
+#procesos h2 {
+    padding: 15px 25px;
+    text-align: center;
+    color: #ff545d;
+}
+
+#procesos .far,
+#procesos .fas {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #ff545d;
+}
+
+.proceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    margin: 40px 0;
+    padding: 30px;
+}
+
+.proceso h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #377ca5;
+}
+
+.proceso p {
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #ff545d;
+}
+
+footer img {
+    height: 50px;
+}
+
+/********** ESTILOS CAPACITACIÓN **********/
+
+#main_capacitacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner_capacitacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_capacitacion_2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_capacitacion h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_capacitacion h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#main_capacitacion form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 30 px 0;
+}
+
+#main_capacitacion form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+}
+
+.article_cap_1 {
+    width: 40%;
+    background-image: url("../img/capacitacion_lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.article_cap_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 40px 0;
+    color: #3a3a3a;
+}
+
+.article_cap_2 h2 {
+    color: #ff545d;
+    margin-bottom: 25px;
+    width: 60%;
+    text-align: center;
+}
+
+.article_cap_2 label {
+    width: 100%;
+}
+
+/********** ESTILOS LISTAR CAPACITACIONES **********/
+
+#banner_listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_listado.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_listado h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_listado h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#main_listar_capacitaciones h2 {
+    color: #ff545d;
+    margin: 60px 0;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px;
+}
+
+.title_table {
+    background: #377ca5;
+    color: white;
+}
+
+#main_listar_capacitaciones table {
+    margin-bottom: 80px;
+}
+
+tr:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+/********** ESTILOS LISTADO DE USUARIOS **********/
+
+#banner_listado_usuarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_capacitacion.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_listado_usuarios h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_listado_usuarios h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#main_listar_usuarios table {
+    width: 70%;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+#main_listar_usuarios h2 {
+    width: 100%;
+}
+
+#main_listar_usuarios h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fa-user-plus {
+    font-size: 34px;
+}
+
+.fa-user-plus:hover {
+    color: #ff545d;
+}
+
+#main_listar_usuarios h2 {
+    color: #ff545d;
+    margin: 60px 0;
+    text-align: center;
+}
+
+#main_listar_usuarios table .icono .fas {
+    font-size: 16px;
+}
+
+.fa-edit:hover {
+    color: #ff545d;
+}
+
+/********** ESTILOS AGREGAR USUARIO **********/
+
+#banner_crear_usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_capacitacion.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_crear_usuario h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_crear_usuario h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#main_crear_usuario form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 30 px 0;
+}
+
+#main_crear_usuario form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+}
+
+#main_crear_usuario select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+}
+
+.article_crear_usuario {
+    width: 40%;
+    background-image: url("../img/crearusuario_lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/********** ESTILOS EDITAR CLIENTE **********/
+
+.article_editar_cliente {
+    width: 40%;
+    background-image: url("../img/editar_cliente_lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+label.error {
+    position: relative;
+    bottom: 18px;
+    color: red;
+    /* margin-top: -20px; */
+}
+
+/********** ESTILOS EDITAR ADMINISTRATIVO **********/
+
+.article_editar_admin {
+    width: 40%;
+    background-image: url("../img/editar_admin_lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/********** ESTILOS EDITAR ADMINISTRATIVO **********/
+
+.article_editar_profesional {
+    width: 40%;
+    background-image: url("../img/editar_profesional_lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/********** ESTILOS LISTADO DE VISITAS **********/
+
+#banner_listado_visitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_listado_visitas.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_listado_visitas h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_listado_visitas h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.button-default {
+    margin: 30px 10px;
+    color: #ff545d;
+    border: none;
+    background: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.fa-file-excel,
+.fa-file-alt,
+.fa-file-csv{
+    font-size: 26px;
+}
+
+.button-default:hover {
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+    color: #377ca5;
+}
+
+.tableexport-caption {
+    color: #3a3a3a;
+    margin-top: 30px;
+}
+
+/********** ESTILOS LISTADO DE CHEQUEOS **********/
+
+#banner_listado_chequeos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_listado_chequeos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_listado_chequeos h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_listado_chequeos h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.fa-calendar-check {
+    cursor: pointer;
+}
+
+.fa-calendar-check:hover {
+    color: #ff545d;
+}
+
+.listado_chequeos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.listado_chequeos input {
+    width: 240px;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.listado_chequeos input:hover {
+    background: #377ca5;
+}
+
+#lista-resultados li {
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    background: #377ca5;
+    color: white;
+}
+
+/********** ESTILOS LISTADO DE PAGOS **********/
+
+#banner_listado_pagos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_listado_pagos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_listado_pagos h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_listado_pagos h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.listado_pagos input {
+    width: 240px;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.listado_pagos input:hover {
+    background: #377ca5;
+}
+
+#main_capacitacion select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+}
+
+/********** ESTILOS LISTADO ASESORÍAS **********/
+
+.btn-estilo {
+    width: 20%;
+    height: 40px;
+    margin-bottom: 80px;
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/********** ESTILOS CREAR PAGOS **********/
+
+#banner_crear_pagos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/banner_listado_pagos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_crear_pagos h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_crear_pagos h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.article_crear_pago {
+    width: 40%;
+    background-image: url("../img/crear_pago_lateral.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#main_fecha {
+    text-align: center;
+}
+
+#fecha {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+#btn_pagar {
+    width: 200px;
+    height: 50px;
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+#btn_pagar:hover {
+    background: #377ca5;
+}
+
+/********** ESTILOS CONTACTO **********/
+
+#banner_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 30px 80px;
+    background-image: url("../img/contacto_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner_contacto h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#banner_contacto h2 {
+    color: white;
+    font-weight: 400;
+}
+
+#main_contacto {
+    display: flex;
+}
+#main_contacto .titulo_form {
+    font-size: 26px;
+    color: #ff545d;
+    text-align: center;
+}
+
+#main_contacto p {
+    margin-bottom: 50px;
+}
+
+#main_contacto img {
+    height: 60px;
+    margin-bottom: 60px;
+}
+
+#main_contacto .fas {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #377ca5;
+}
+
+.article_form:nth-child(1) {
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+}
+
+.article_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 60px 0;
+    padding: 40px;
+    color: #3a3a3a;
+    text-align: justify;
+}
+
+.article_form h3 {
+    margin-bottom: 30px;
+}
+
+#main_contacto form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main_contacto form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+}
+
+#main_contacto form textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+#submit {
+    background: #ff545d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #377ca5;
+}
+
+/********** ESTILOS GRÁFICOS **********/
+
+#graficos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.article-grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    min-height: 600px;
+}
+
+/********** ESTILOS MEDIA QUERIES **********/
+
+/* Dispositivos Móviles */
+@media screen and (max-width: 768px) {
+    header label {
+        display: block;
+    }
+
+    .menu {
+        margin-left: -100%;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        background: white;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid lightsteelblue;
+    }
+
+    #procesos {
+        padding: 10px;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    #banner_home,
+    #banner_capacitacion,
+    #banner_listado,
+    #banner_contacto,
+    #banner_listado_usuarios,
+    #banner_crear_usuario,
+    #banner_listado_visitas {
+        transition: all 0.5s;
+        height: 220px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #banner_home button {
+        display: none;
+    }
+
+    .article {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 30px 10px 10px 10px;
+    }
+
+    .proceso {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .article_cap_1 {
+        display: none;
+    }
+
+    .article_cap_2 {
+        width: 100%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    .article_form {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main_contacto .article_form:nth-child(1) {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #graficos {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .article-grafico {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .listado_tabla th,
+    td {
+        font-size: 12px;
+        padding: 4px;
+    }
+}

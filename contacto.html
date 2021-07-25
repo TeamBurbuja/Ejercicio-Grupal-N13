@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d20d6c8c4.js" crossorigin="anonymous"></script>
+    <title>Ejercicio Grupal 4 | CONTACTO</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="img/Safety Logo H.png" alt="logotipo safety check"></a>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="crear_capacitacion.html">Capacitación</a></li>
+                <li><a href="listar_capacitaciones.html">Listar Capacitaciones</a></li>
+                <li><a href="listado_usuarios.html">Usuarios</a></li>
+                <li><a href="listado_visitas.html">Visitas</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <section id="banner_contacto">
+        <h1>Contáctanos</h1>
+        <h2>Atenderemos con prontitud todas tus dudas o consultas</h2>
+    </section>
+    <main id="main_contacto">
+        <!-- Datos Contacto -->
+        <article class="article_form">
+            <img src="img/Safety Logo H.png" alt="logotipo safety check">
+            <h3>DIRECCIÓN</h3>
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Almirante Pastene 244, Piso 1, Providencia - Santiago</p>
+            <h3>TELÉFONOS</h3>
+            <i class="fas fa-phone-alt"></i>
+            <p>+56 9 39156783 <strong>&nbsp;|&nbsp;</strong> +56 9 73088033</p>
+            <h3>CORREO</h3>
+            <i class="fas fa-envelope"></i>
+            <p>contacto@safetycheck.cl</p>
+        </article>
+        <!-- Formulario -->
+        <article class="article_form">
+            <h3 class="titulo_form">FORMULARIO DE CONTACTO</h3>
+            <p>Complete el formulario presente con todos los datos necesarios y nos pondremos en contacto con usted lo
+                más pronto posible.</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text">
+                <label for="correo">Correo</label>
+                <input type="text">
+                <label for="telefono">Telefono</label>
+                <input type="text">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="" cols="30" rows="5"></textarea>
+                <input type="submit" name="enviar" id="submit">
+            </form>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <a href="index.html"><img src="img/Safety Logo H WHITE.png" alt="logotipo safety white"></a>
+    </footer>
+</body>
+
+</html>
